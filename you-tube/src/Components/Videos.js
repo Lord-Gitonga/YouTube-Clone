@@ -3,10 +3,11 @@ import{Stack, Box} from '@mui/material'
 import VideoCard from './VideoCard';
 import ChannelCard from './ChannelCard';
 
-function Videos({ videos }) {
+function Videos({ videos, direction }) {
     console.log(videos);
+   // if(!videos?.lenght) return 'Loading...'
   return (
-      <Stack direction="row" flexWrap="wrap"
+      <Stack direction={direction || "row"} flexWrap="wrap"
       justifyContent="start" gap={2}>
           {videos.map((item, index) => (
               <Box key={index}>
