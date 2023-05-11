@@ -5,7 +5,7 @@ import { Box } from '@mui/material'
 import Videos from './Videos'
 import ChannelCard from './ChannelCard'
 import { fetchFromAPI } from '../Utils/fetchFromAPI'
-import zIndex from '@mui/material/styles/zIndex'
+//import zIndex from '@mui/material/styles/zIndex'
 
 function ChannelDetail() {
   const[channelDetail, setChannelDetail]=useState(null)
