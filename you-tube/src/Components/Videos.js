@@ -5,7 +5,7 @@ import ChannelCard from './ChannelCard';
 
 function Videos({ videos, direction }) {
     console.log(videos);
-   // if(!videos?.lenght) return 'Loading...'
+   if(!videos?.length) return 'Loading...'
   return (
       <Stack direction={direction || "row"} flexWrap="wrap"
       justifyContent="start" gap={2}>
